@@ -1,0 +1,91 @@
+# ft_life
+
+Simulation du Jeu de la Vie de Conway, en terminal.
+
+## Principe
+
+Une grille de cellules, chacune vivante ou morte. À chaque
+génération, toutes les cellules évoluent en même temps selon
+le nombre de voisins vivants autour d'elles.
+
+## Règles de Conway
+
+- Une cellule **vivante** avec **2 ou 3** voisins vivants
+  → reste vivante.
+- Une cellule **vivante** avec moins de 2 ou plus de 3 voisins
+  → meurt.
+- Une cellule **morte** avec exactement **3** voisins vivants
+  → devient vivante.
+- Sinon → reste morte.
+
+(Les voisins = les 8 cases autour, diagonales incluses.)
+
+## Le struct
+
+```c
+typedef struct s_cellule
+{
+	int	vivante;   // etat actuel
+	int	suivante;  // etat calcule pour la prochaine generation
+}	t_cellule;
+```
+
+Le champ `suivante` est important : il faut calculer **toute**
+la nouvelle génération à partir de l'état actuel, sans modifier
+les cellules déjà utilisées par le calcul des voisines qui
+suivent. On calcule d'abord tout dans `suivante`, puis on
+bascule `vivante = suivante` pour toute la grille une fois le
+calcul terminé.
+
+## Le tableau 2D dynamique
+
+```c
+t_cellule	**grille;
+
+grille = malloc(sizeof(t_cellule *) * hauteur);
+// puis une ligne a la fois :
+// grille[i] = malloc(sizeof(t_cellule) * largeur);
+```
+
+## Règles du programme
+
+- Demander largeur et hauteur de la grille.
+- Initialiser l'état de départ : soit aléatoirement (chaque
+  cellule a une chance sur 2 d'être vivante), soit en demandant
+  au joueur de saisir les coordonnées des cellules vivantes une
+  par une.
+- Afficher la grille (`#` vivante, `.` morte).
+- Calculer et afficher la génération suivante à chaque tour
+  (touche Entrée pour avancer, ou nombre de générations à
+  jouer d'un coup).
+- S'arrêter si demandé, ou après un nombre de générations fixé.
+
+## Contraintes
+
+- Norme 42 : pas de `for`, pas de `switch`, pas de globales.
+- Ne doit jamais crash.
+- Attention aux bords/coins de la grille lors du calcul des
+  8 voisins (ne jamais accéder hors du tableau).
+- Libérer tout le tableau 2D avant de quitter.
+- Makefile avec `$(NAME)`, `all`, `clean`, `fclean`, `re`.
+
+## Bonus
+
+- Détection de "grille stable" (plus aucun changement entre
+  deux générations) → arrêt automatique.
+- Détection de cycle (la grille revient à un état déjà vu).
+- Effacer l'écran (ANSI) entre chaque génération pour un effet
+  d'animation.
+- Charger un motif connu au démarrage (planeur, oscillateur...).
+
+## Exemple d'affichage
+
+```
+Generation 3
+. . # . .
+. . # . .
+. . # . .
+. . . . .
+
+Entree pour continuer, q pour quitter :
+```
