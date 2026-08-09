@@ -3,4 +3,10 @@
 
 ## Pour lancer la simulation
 
-``make all``
+<p>Pour lancer ``make all``</p>
+<p>Pour relancer ``make re``</p>
+
+
+## Pour plus de renseignemenet
+
+WIKIPEDIA : https://fr.wikipedia.org/wiki/Jeu_de_la_vie
