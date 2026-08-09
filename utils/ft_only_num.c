@@ -1,27 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_game_of_life.h                                  :+:      :+:    :+:   */
+/*   ft_only_num.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: romasant <romasant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/08 17:50:55 by romasant          #+#    #+#             */
-/*   Updated: 2026/08/09 16:01:41 by romasant         ###   ########.fr       */
+/*   Created: 2026/08/09 00:05:26 by romasant          #+#    #+#             */
+/*   Updated: 2026/08/09 16:12:22 by romasant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_GAME_OF_LIFE_H
-# define FT_GAME_OF_LIFE_H
-
-# include <unistd.h>
-# include <stdio.h>
-# include <stdlib.h>
-
-void	ft_putchar(char c);
-void	ft_putstr(char *str);
-int		*ft_init_tab(void);
-int		ft_welcome(void);
-int		ft_only_num(char c);
-void	ft_aff_menu(int result);
-
-#endif
+int	ft_only_num(char c)
+{
+	if (c == '1' || c == '2' || c == '3')
+		return (1);
+	return (0);
+}

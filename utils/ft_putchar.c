@@ -1,27 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_game_of_life.h                                  :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: romasant <romasant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/08 17:50:55 by romasant          #+#    #+#             */
-/*   Updated: 2026/08/09 16:01:41 by romasant         ###   ########.fr       */
+/*   Created: 2026/08/08 23:42:13 by romasant          #+#    #+#             */
+/*   Updated: 2026/08/08 23:42:39 by romasant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_GAME_OF_LIFE_H
-# define FT_GAME_OF_LIFE_H
+#include "../include/ft_game_of_life.h"
 
-# include <unistd.h>
-# include <stdio.h>
-# include <stdlib.h>
-
-void	ft_putchar(char c);
-void	ft_putstr(char *str);
-int		*ft_init_tab(void);
-int		ft_welcome(void);
-int		ft_only_num(char c);
-void	ft_aff_menu(int result);
-
-#endif
+void	ft_putchar(char c)
+{
+	write(1, &c, 1);
+}
