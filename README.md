@@ -1,10 +1,10 @@
 # Simulation du Jeu de la Vie de Conway, en terminal.
-
+Juste une simple simulation XD
 
 ## Pour lancer la simulation
 
-<p>Pour lancer ``make all``</p>
-<p>Pour relancer ``make re``</p>
+Pour lancer ``make all``
+Pour relancer ``make re``
 
 
 ## Pour plus de renseignemenet
