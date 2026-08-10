@@ -1,29 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_game_of_life.h                                  :+:      :+:    :+:   */
+/*   ft_free_tab.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: romasant <romasant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/08 17:50:55 by romasant          #+#    #+#             */
-/*   Updated: 2026/08/10 12:58:15 by romasant         ###   ########.fr       */
+/*   Created: 2026/08/10 12:56:34 by romasant          #+#    #+#             */
+/*   Updated: 2026/08/10 13:10:05 by romasant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_GAME_OF_LIFE_H
-# define FT_GAME_OF_LIFE_H
+#include "../include/ft_game_of_life.h"
 
-# include <unistd.h>
-# include <stdio.h>
-# include <stdlib.h>
-
-void	ft_putchar(char c);
-void	ft_putstr(char *str);
-char	**ft_init_tab(void);
-int		ft_welcome(void);
-int		ft_only_num(char c);
-void	ft_aff_menu(int result);
-int		ft_simulation(void);
-int		ft_free_tab(char **tab);
-
-#endif
+int	ft_free_tab(char **tab)
+{
+	int (i) = 15;
+	while (i >= 0)
+	{
+		free(tab[i]);
+		i--;
+	}
+	free(tab);
+	return (0);
+}

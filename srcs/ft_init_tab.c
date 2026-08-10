@@ -6,7 +6,7 @@
 /*   By: romasant <romasant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/08 23:34:07 by romasant          #+#    #+#             */
-/*   Updated: 2026/08/10 12:54:21 by romasant         ###   ########.fr       */
+/*   Updated: 2026/08/10 13:01:01 by romasant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,13 +26,9 @@ char	**ft_init_tab(void)
 		while (j <= 15)
 		{
 			tab[i][j] = '.';
-			ft_putchar(tab[i][j]);
-			ft_putstr("  ");
 			j++;
 		}
-		ft_putchar('\n');
 		i++;
 	}
-	ft_putchar('\n');
 	return (tab);
 }

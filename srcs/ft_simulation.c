@@ -6,7 +6,7 @@
 /*   By: romasant <romasant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/09 19:34:17 by romasant          #+#    #+#             */
-/*   Updated: 2026/08/10 12:46:05 by romasant         ###   ########.fr       */
+/*   Updated: 2026/08/10 12:56:22 by romasant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 int	ft_simulation(void)
 {
-	ft_init_tab();
+	char	**tab;
+	tab = ft_init_tab();
+	ft_free_tab(tab);
 	return (0);
 }
