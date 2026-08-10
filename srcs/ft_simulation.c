@@ -1,19 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_simulation.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: romasant <romasant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/08 23:46:34 by romasant          #+#    #+#             */
-/*   Updated: 2026/08/08 23:50:55 by romasant         ###   ########.fr       */
+/*   Created: 2026/08/09 19:34:17 by romasant          #+#    #+#             */
+/*   Updated: 2026/08/10 12:46:05 by romasant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/ft_game_of_life.h"
 
-int	main(void)
+int	ft_simulation(void)
 {
-	ft_welcome();
+	ft_init_tab();
 	return (0);
 }

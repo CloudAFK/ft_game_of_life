@@ -1,28 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_game_of_life.h                                  :+:      :+:    :+:   */
+/*   ft_main.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: romasant <romasant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/08 17:50:55 by romasant          #+#    #+#             */
-/*   Updated: 2026/08/10 12:53:52 by romasant         ###   ########.fr       */
+/*   Created: 2026/08/08 23:46:34 by romasant          #+#    #+#             */
+/*   Updated: 2026/08/10 12:50:20 by romasant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_GAME_OF_LIFE_H
-# define FT_GAME_OF_LIFE_H
+#include "../include/ft_game_of_life.h"
 
-# include <unistd.h>
-# include <stdio.h>
-# include <stdlib.h>
-
-void	ft_putchar(char c);
-void	ft_putstr(char *str);
-char	**ft_init_tab(void);
-int		ft_welcome(void);
-int		ft_only_num(char c);
-void	ft_aff_menu(int result);
-int		ft_simulation(void);
-
-#endif
+int	main(void)
+{
+	int (rep) = 0;
+	int (flag) = 0;
+	rep = ft_welcome();
+	while (flag == 0)
+	{
+		if (rep == 1)
+		{
+			ft_putstr("En construction ...\n");
+			rep = ft_welcome();
+		}
+		else if (rep == 2)
+		{
+			ft_simulation();
+			flag = 1;
+		}
+		else if (rep == 3)
+		{
+			ft_putstr("Au revoir ! On se revoit bientot XD\n");
+			flag = 1;
+		}
+	}
+	return (0);
+}

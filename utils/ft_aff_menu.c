@@ -6,7 +6,7 @@
 /*   By: romasant <romasant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/09 00:14:09 by romasant          #+#    #+#             */
-/*   Updated: 2026/08/09 16:12:52 by romasant         ###   ########.fr       */
+/*   Updated: 2026/08/09 19:21:46 by romasant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,6 @@ void	ft_aff_menu(int result)
 	ft_putstr("|   2) Generation map random                              |\n");
 	ft_putstr("|   3) Quitter                                            |\n");
 	ft_putstr(" ---------------------------------------------------------\n");
-	if (result != 0)
+	if (result == -1)
 		ft_putstr("Erreur: tu ne peux que mettre 1, 2 ou 3\n");
 }

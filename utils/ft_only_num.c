@@ -6,13 +6,18 @@
 /*   By: romasant <romasant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/09 00:05:26 by romasant          #+#    #+#             */
-/*   Updated: 2026/08/09 16:12:22 by romasant         ###   ########.fr       */
+/*   Updated: 2026/08/09 17:02:51 by romasant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_only_num(char c)
 {
-	if (c == '1' || c == '2' || c == '3')
+	int (rep) = 0;
+	if (c == '1')
 		return (1);
-	return (0);
+	else if (c == '2')
+		rep = 2;
+	else if (c == '3')
+		rep = 3;
+	return (rep);
 }
