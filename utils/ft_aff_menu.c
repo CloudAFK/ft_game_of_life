@@ -6,7 +6,7 @@
 /*   By: romasant <romasant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/09 00:14:09 by romasant          #+#    #+#             */
-/*   Updated: 2026/08/09 19:21:46 by romasant         ###   ########.fr       */
+/*   Updated: 2026/08/11 21:41:55 by romasant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@ void	ft_aff_menu(int result)
 	ft_putstr("|             Bienvenue dans le jeu de la vie             |\n");
 	ft_putstr("|   Fait ton choix :                                      |\n");
 	ft_putstr("|                                                         |\n");
-	ft_putstr("|   1) Lancer une simulation                              |\n");
-	ft_putstr("|   2) Generation map random                              |\n");
+	ft_putstr("|   1) Lancer une simulation random (16x16)               |\n");
+	ft_putstr("|   2) Generation map random (size perso)                 |\n");
 	ft_putstr("|   3) Quitter                                            |\n");
 	ft_putstr(" ---------------------------------------------------------\n");
 	if (result == -1)

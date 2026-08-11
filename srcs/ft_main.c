@@ -6,7 +6,7 @@
 /*   By: romasant <romasant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/08 23:46:34 by romasant          #+#    #+#             */
-/*   Updated: 2026/08/10 12:50:20 by romasant         ###   ########.fr       */
+/*   Updated: 2026/08/11 21:38:47 by romasant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,12 +21,13 @@ int	main(void)
 	{
 		if (rep == 1)
 		{
-			ft_putstr("En construction ...\n");
-			rep = ft_welcome();
+			ft_simulation();
+			flag = 1;
 		}
 		else if (rep == 2)
 		{
-			ft_simulation();
+			//rep = ft_welcome();
+			ft_putstr("En construction ...\n");
 			flag = 1;
 		}
 		else if (rep == 3)
