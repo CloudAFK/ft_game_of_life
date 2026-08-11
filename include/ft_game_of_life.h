@@ -6,7 +6,7 @@
 /*   By: romasant <romasant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/08 17:50:55 by romasant          #+#    #+#             */
-/*   Updated: 2026/08/11 18:44:35 by romasant         ###   ########.fr       */
+/*   Updated: 2026/08/11 22:16:25 by romasant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,8 @@ int		ft_simulation(void);
 void	ft_free_tab(char **tab);
 int		ft_struct_cellule(char **tab, int x, int y);
 int		ft_count_neighbors(char **tab, int x, int y);
-typedef struct s_cellule
+char	**ft_init_tab_map1(void);
+typedef struct s_cellulechar
 {
 	int	vivante;
 	int	next;

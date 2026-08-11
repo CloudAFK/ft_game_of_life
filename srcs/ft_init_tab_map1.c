@@ -1,34 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_simulation.c                                    :+:      :+:    :+:   */
+/*   ft_init_tab_map1.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: romasant <romasant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/09 19:34:17 by romasant          #+#    #+#             */
-/*   Updated: 2026/08/11 22:19:16 by romasant         ###   ########.fr       */
+/*   Created: 2026/08/11 22:15:03 by romasant          #+#    #+#             */
+/*   Updated: 2026/08/11 22:15:05 by romasant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/ft_game_of_life.h"
 
-int	ft_simulation(void)
+char	**ft_init_tab_map1(void)
 {
 	char	**tab;
-	int (x) = 0;
-	int (y) = 0;
+	int		i;
+	int		j;
 
-	tab = ft_init_tab_map1();
-	while (x <= 15)
+	tab = malloc(sizeof(char *) * 16);
+	i = 0;
+	while (i < 16)
 	{
-		y = 0;
-		while (y <= 15)
+		tab[i] = malloc(sizeof(char) * 16);
+		j = 0;
+		while (j < 16)
 		{
-			ft_struct_cellule(tab, x, y);
-			y++;
+			tab[i][j] = '.';
+			j++;
 		}
-		x++;
+		i++;
 	}
-	ft_free_tab(tab);
-	return (0);
+	tab[5][5] = '#';
+	tab[5][6] = '#';
+	tab[6][5] = '#';
+	tab[6][6] = '#';
+	return (tab);
 }
