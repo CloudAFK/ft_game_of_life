@@ -6,7 +6,7 @@
 /*   By: romasant <romasant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/10 13:20:37 by romasant          #+#    #+#             */
-/*   Updated: 2026/08/12 00:24:15 by romasant         ###   ########.fr       */
+/*   Updated: 2026/08/12 00:40:11 by romasant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,6 @@ int	ft_count_neighbors(char **tab, int x, int y)
 		i = -1;
 		while (i <= 1)
 		{
-			j = -1;
 			x_actuel = x + i;
 			y_actuel = y + j;
 			if (!(i == 0 && j == 0) && ((x_actuel >= 0 && x_actuel <= 15) && (y_actuel >= 0 && y_actuel <= 15)))
@@ -49,9 +48,10 @@ int	ft_count_neighbors(char **tab, int x, int y)
 int	ft_struct_cellule(char **tab, int x, int y)
 {
 	int (result) = 0;
-	//t_cellule	cellule;
+
+	printf("\nVoici le nombre de case autour de %d %d :\n", x, y);
 	result = ft_count_neighbors(tab, x, y);
-	printf("\nVoici le nombre de case autour de %d %d : %d\n", x, y, result);
+	printf("Total : %d\n", result);
 	return (0);
 }
 /*

@@ -6,7 +6,7 @@
 /*   By: romasant <romasant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/08 17:50:55 by romasant          #+#    #+#             */
-/*   Updated: 2026/08/11 22:16:25 by romasant         ###   ########.fr       */
+/*   Updated: 2026/08/12 00:29:49 by romasant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void	ft_free_tab(char **tab);
 int		ft_struct_cellule(char **tab, int x, int y);
 int		ft_count_neighbors(char **tab, int x, int y);
 char	**ft_init_tab_map1(void);
-typedef struct s_cellulechar
+typedef struct s_cellule
 {
 	int	vivante;
 	int	next;
