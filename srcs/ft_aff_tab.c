@@ -6,7 +6,7 @@
 /*   By: romasant <romasant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/13 20:41:47 by romasant          #+#    #+#             */
-/*   Updated: 2026/08/13 20:46:56 by romasant         ###   ########.fr       */
+/*   Updated: 2026/08/14 22:46:26 by romasant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,10 @@ void	ft_aff_tab(char **tab, int size)
 {
 	int (i) = 0;
 	int (j) = 0;
-	while (i <= size)
+	while (i < size)
 	{
 		j = 0;
-		while (j <= size)
+		while (j < size)
 		{
 			ft_putchar(tab[i][j]);
 			ft_putstr("  ");

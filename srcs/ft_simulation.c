@@ -6,7 +6,7 @@
 /*   By: romasant <romasant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/09 19:34:17 by romasant          #+#    #+#             */
-/*   Updated: 2026/08/14 19:25:35 by romasant         ###   ########.fr       */
+/*   Updated: 2026/08/14 22:46:46 by romasant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,6 @@ int	ft_simulation(void)
 	size = atoi(buff);
 	tab = ft_init_tab_random(size);
 	ft_aff_tab(tab, size);
-	printf("test1\n");
 	ft_free_tab(tab, size);
 	return (0);
 }
