@@ -6,7 +6,7 @@
 /*   By: romasant <romasant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/08 17:50:55 by romasant          #+#    #+#             */
-/*   Updated: 2026/08/14 22:41:40 by romasant         ###   ########.fr       */
+/*   Updated: 2026/08/14 23:01:21 by romasant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,8 @@ int		ft_struct_cellule(char **tab, int x, int y);
 int		ft_count_neighbors(char **tab, int x, int y);
 char	**ft_init_tab_random(int size);
 void	ft_aff_tab(char **tab, int size);
+int		ft_isdigit(char c);
+int	ft_check_input(char *buff);
 typedef struct s_cellule
 {
 	int	vivante;
