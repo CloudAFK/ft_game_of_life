@@ -6,7 +6,7 @@
 /*   By: romasant <romasant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/10 13:20:37 by romasant          #+#    #+#             */
-/*   Updated: 2026/08/12 00:40:11 by romasant         ###   ########.fr       */
+/*   Updated: 2026/08/13 19:29:56 by romasant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,8 @@ int	ft_count_neighbors(char **tab, int x, int y)
 		{
 			x_actuel = x + i;
 			y_actuel = y + j;
-			if (!(i == 0 && j == 0) && ((x_actuel >= 0 && x_actuel <= 15) && (y_actuel >= 0 && y_actuel <= 15)))
+			if (!(i == 0 && j == 0) && ((x_actuel >= 0 && x_actuel <= 15)
+				&& (y_actuel >= 0 && y_actuel <= 15)))
 			{
 				printf("- Voici la position recherche : %d %d\n", x_actuel, y_actuel);
 				if (tab[x_actuel][y_actuel] == '#')
