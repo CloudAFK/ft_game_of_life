@@ -6,7 +6,7 @@
 /*   By: romasant <romasant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/09 19:34:17 by romasant          #+#    #+#             */
-/*   Updated: 2026/08/15 16:19:27 by romasant         ###   ########.fr       */
+/*   Updated: 2026/08/21 20:15:20 by romasant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 int	ft_simulation(void)
 {
-	int (size) = 0;
-	char	**tab;
 	char	buff[3];
+	char	**tab;
 
+	int (size) = 0;
 	ft_putstr("Choisis la size de ton tab (entre 2 a 99) :");
 	read(0, buff, 2);
 	if (!ft_check_input(buff))

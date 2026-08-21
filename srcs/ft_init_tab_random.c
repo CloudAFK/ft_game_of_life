@@ -6,7 +6,7 @@
 /*   By: romasant <romasant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/11 22:15:03 by romasant          #+#    #+#             */
-/*   Updated: 2026/08/21 15:15:57 by romasant         ###   ########.fr       */
+/*   Updated: 2026/08/21 20:14:28 by romasant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,15 @@
 
 char	**ft_init_tab_random(int size)
 {
+	char	**tab;
+
 	srand(time(NULL));
 	int (i) = 0;
 	int (j) = 0;
 	int (nb_random) = 0;
-	char	**tab;
-
 	tab = malloc(sizeof(char *) * (size));
 	while (i < size)
-	{
-		tab[i] = malloc(sizeof(char) * (size));
-		i++;
-	}
+		tab[i++] = malloc(sizeof(char) * (size));
 	i = 0;
 	while (i < size)
 	{
