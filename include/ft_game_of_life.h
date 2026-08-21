@@ -6,7 +6,7 @@
 /*   By: romasant <romasant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/08 17:50:55 by romasant          #+#    #+#             */
-/*   Updated: 2026/08/14 23:01:21 by romasant         ###   ########.fr       */
+/*   Updated: 2026/08/21 15:04:45 by romasant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,8 @@ int		ft_only_num(char c);
 void	ft_aff_menu(int result);
 int		ft_simulation(void);
 void	ft_free_tab(char **tab, int size);
-int		ft_struct_cellule(char **tab, int x, int y);
-int		ft_count_neighbors(char **tab, int x, int y);
+int		ft_struct_cellule(char **tab, int x, int y, int size);
+int		ft_count_neighbors(char **tab, int x, int y, int size);
 char	**ft_init_tab_random(int size);
 void	ft_aff_tab(char **tab, int size);
 int		ft_isdigit(char c);
