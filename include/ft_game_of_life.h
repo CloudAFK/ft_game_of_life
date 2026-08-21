@@ -6,7 +6,7 @@
 /*   By: romasant <romasant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/08 17:50:55 by romasant          #+#    #+#             */
-/*   Updated: 2026/08/21 15:04:45 by romasant         ###   ########.fr       */
+/*   Updated: 2026/08/21 15:33:04 by romasant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 
 void	ft_putchar(char c);
 void	ft_putstr(char *str);
-int		ft_welcome(void);
+int		ft_welcome(int error);
 int		ft_only_num(char c);
 void	ft_aff_menu(int result);
 int		ft_simulation(void);

@@ -6,7 +6,7 @@
 /*   By: romasant <romasant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/14 23:04:38 by romasant          #+#    #+#             */
-/*   Updated: 2026/08/15 16:16:28 by romasant         ###   ########.fr       */
+/*   Updated: 2026/08/21 15:14:10 by romasant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,12 @@ int	ft_check_input(char *buff)
 	int (flag) = 0;
 	int (nb_chiffre) = 0;
 	char	(trash) = 0;
-	while (buff[i] != '\0' || buff[i] != '\n')
+	while (buff[i] != '\0')
 	{
 		if (!ft_isdigit(buff[i]))
-		flag = 1;
+			flag = 1;
 		else
-		nb_chiffre++;
+			nb_chiffre++;
 		i++;
 	}
 	if (buff[i] != '\n')
